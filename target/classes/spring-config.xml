@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	
+	<bean id="restaurantBean" class="Restaurant"> 
+		<property name="tea" ref="teaBean"></property>
+	 </bean>
+	
+	<bean id="teaBean" class="Tea"></bean>
+	
+	<!-- <bean id="restaurantBean1" class="Restaurant" scope="prototype"> 
+		<property name="restaurantName" value="Franklin And Brothers Chains"></property>
+	 </bean> -->
+	
+	<!-- <bean id="restaurantBean1" class="Restaurant">
+		<constructor-arg name="restaurantName" value="ABC Chains Pvt Ltd"></constructor-arg>
+	</bean> -->
+
+
+	<!-- <bean id="restaurantBean1" class="Restaurant">
+		<property name="restaurantName" value="Franklin And Brothers Chains"></property>
+		<property name="phone" value="98989898"></property>
+	</bean> -->
+
+	<!-- <bean id="restaurantBean1" class="Restaurant"> <property name="restaurantName" 
+		value="Franklin And Brothers Chains"></property> </bean> -->
+
+
+	<!-- <bean id = "restaurantBean1" class="Restaurant" ></bean> <bean id = 
+		"restaurantBean2" class="Restaurant" ></bean> <bean id = "restaurantBean3" 
+		class="Restaurant" ></bean> <bean id = "restaurantBean4" class="Restaurant" 
+		></bean> <bean id = "humanBean" class="Human" ></bean> -->
+
+</beans>
